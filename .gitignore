@@ -1,5 +1,4 @@
 .DS_Store
-*.ipynb_checkpoints
 
 05 - model.ipynb
 resize img.ipynb
@@ -9,4 +8,4 @@ test-img/*
 origion-img/*
 dataset/*
 webscraping/*
-
+Readme123/*
