@@ -8,6 +8,8 @@ However, my realtor keeps sending me all the houses with price under some thresh
   <img src="https://github.com/Kenghsin/house-image-classification/assets/listings.png" height="761" width="361">
 </p>
 
+![Screenshot](listings.png)
+
 **According to this situation, can I use mechine learning algorithm to build a classification system by classifing the house images which I like, then the system tells me some house I might be interested in, like my realtor do?**
 
 If this system works, it can save me a lot of time in checking every house with price under setting threshold. Then I just need to check price of all the houses system tells me.
