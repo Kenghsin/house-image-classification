@@ -1,9 +1,12 @@
-<font color='Blue' size=5><B>Problem statement</B></font><br>
-# publi123
+# Problem statement
 
 When I receive real estate listing notification from my realtor, I probability look at some basic information such as price, house pictures, bedrooms, bathrooms..., etc. Except price, the first impression of a house is more important than other information. If I look at house pictures then I don't like it, it doesn't matter many bedrooms, bathrooms...etc, the house have. 
 
 However, my realtor keeps sending me all the houses with price under some threshold. Then, he sometimes sends me message "there is a house you might be interested in, we can go checking it on sunday". How does my realtor know I probably like this house? It might because we do house hunting for two years together, so he learned.
+
+<p align="left">
+  <img src="https://github.com/Kenghsin/house-image-classification/assets/listings.png" height="761" width="361">
+</p>
 
 **According to this situation, can I use mechine learning algorithm to build a classification system by classifing the house images which I like, then the system tells me some house I might be interested in, like my realtor do?**
 
