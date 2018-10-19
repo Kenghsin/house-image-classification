@@ -1,9 +1,10 @@
 .DS_Store
-.ipynb_checkpoints
+*.ipynb_checkpoints
 
 05 - model.ipynb
 resize img.ipynb
 
+.ipynb_checkpoints/*
 test-img/*
 origion-img/*
 dataset/*
