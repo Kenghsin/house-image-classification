@@ -1,4 +1,5 @@
 <font color='Blue' size=5><B>Problem statement</B></font><br>
+# publi123
 
 When I receive real estate listing notification from my realtor, I probability look at some basic information such as price, house pictures, bedrooms, bathrooms..., etc. Except price, the first impression of a house is more important than other information. If I look at house pictures then I don't like it, it doesn't matter many bedrooms, bathrooms...etc, the house have. 
 
