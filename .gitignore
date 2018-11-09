@@ -1,7 +1,10 @@
 .DS_Store
+readme0.md
 
 05 - model.ipynb
 resize img.ipynb
+5 model-cnn.ipynb
+5 model-classification.ipynb
 
 .ipynb_checkpoints/*
 test-img/*
@@ -9,4 +12,3 @@ origion-img/*
 dataset/*
 webscraping/*
 readme123/*
-readme0.md/*
