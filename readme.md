@@ -1,37 +1,17 @@
-# Problem statement
+# Executive Summary
 
-When I receive real estate listing notification from my realtor, I probability look at some basic information such as price, house pictures, bedrooms, bathrooms..., etc. Except price, the first impression of a house is more important than other information. If I look at house pictures then I don't like it, it doesn't matter many bedrooms, bathrooms...etc, the house have. 
+When I receive real estate listing notification from my realtor, there is some basic information such as price, house images, bedrooms, bathrooms..., etc. Except for price, the first impression of a listing is the house image. When I look at a house image and I don't like it, it doesn't matter many bedrooms, bathrooms...etc, this house has.
 
-As show in figure, the strategy of my realtor is to sending me all the houses with price under some threshold, then let me check if there any houses I like. As you can see, it is a lot of houses ot check. 
+My realtor’s strategy is to recommend me the houses which price is under a set threshold. When I check the house images, I don’t like most houses. Can I use machine learning algorithm to classify the house images into binary categories, namely like and unlike. I so, it is not only a great system to recommend listing but also save me a lot of time on checking listings.
 
-<img src="https://github.com/Kenghsin/house-image-classification/blob/master/assets/strategy1.png" width="619" height="123" /><br>
+However, there are two main challenges. The first one will be insufficient data. The like/unlike of house images are based on how many houses the client checks. The second one is the image quality.     
 
-Then, he sometimes sends me message "*there is a house you might be interested in, we can go checking it on sunday*". **How does my realtor know I probably like this house?** It might because we do house hunting for two years together, so he learned. According to this situation, can I use mechine learning algorithm to build a image classification system to classify the house images which I might like, then filter those houses with price under some threshold, the system tells me some house I might be interested in, like my realtor do? So, my strategy is shown in figure.
+The purpose of this project is to: (1) build a classification system to classify house images into binary categories, (2) test the limitations of CNN technology.
 
-<img src="https://github.com/Kenghsin/house-image-classification/blob/master/assets/strategy2.png" width="678" height="121" /><br>
+House images are collected from recently sold houses in six cities, namely city of El Cerrito, El Sobrante, Hercules, Pinole and San Pablo. Based on the smallest size of images and the majority of the image width/height ratio, all images are resized into 150 pixels times 100 pixels. Six classification models and the convolutional neural network (CNN) model are applied to classify house images. 
 
-If this system works, instead of checking every house with price under setting threshold, I just need to check price of all the houses system tells me. It can svae me a lot of time.
+The highest test accuracy 82.7% is obtained by the CNN model with 74.1% baseline accuracy in the city of Pinole. The confusion matrix reports 57 true positives, 11 false positives, 10 true negatives, and 3 false negatives. 
 
-### The main challenge of this problem would be:
+If the listings are recommended by the 68 positive predictions(TP+NP), it will save 16% (1 - positive predictions/all) time on checking listings. The 83.8% precision shows the FP less than 17 %. The 95% sensitivity means only 5% FN is misclassified.  
 
-1. `Insufficient data`: it doesn't make sense to ask someone watch more than 300 images.
-2. `Image quailty`: every home owner takes pictures in different angle, different layout. 
-
-In this project, I need to go through several steps:
-1. Obtain data: the features of data will contain house images, number of bedroom, number of bathroom, house size, lot size, price, city name. Please check `1 web-scraping.jpynb`
-
-2. Data cleaning: Please check `2 data-cleaning.jpynb`
-
-3. Image preprocessing: Please check `3 image-preprocessing.jpynb`
-
-4. EDA: Please check `4 eda.jpynb`
-
-5. Model: Logistic Six classification models which is regression, decision tree, random forest, KNN, SVM, and gradient boosting are used to classify this binary class like and unlike. Please check `5 model-classification`. A CNN model is built to classify this binary class like and unlike. Please check `5 model-cnn`
-
-6. Evaluate model:
-
-7. Answer the problem: 123
-
-<span style="color:orange;">Word up</span>
-
-
+In the future, increasing the precision and control the sensitivity will make this system more robust.

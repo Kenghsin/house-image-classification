@@ -1,0 +1,37 @@
+# Problem statement
+
+When I receive real estate listing notification from my realtor, I probability look at some basic information such as price, house pictures, bedrooms, bathrooms..., etc. Except price, the first impression of a house is more important than other information. If I look at house pictures then I don't like it, it doesn't matter many bedrooms, bathrooms...etc, the house have. 
+
+As show in figure, the strategy of my realtor is to sending me all the houses with price under some threshold, then let me check if there any houses I like. As you can see, it is a lot of houses ot check. 
+
+<img src="https://github.com/Kenghsin/house-image-classification/blob/master/assets/strategy1.png" width="619" height="123" /><br>
+
+Then, he sometimes sends me message "*there is a house you might be interested in, we can go checking it on sunday*". **How does my realtor know I probably like this house?** It might because we do house hunting for two years together, so he learned. According to this situation, can I use mechine learning algorithm to build a image classification system to classify the house images which I might like, then filter those houses with price under some threshold, the system tells me some house I might be interested in, like my realtor do? So, my strategy is shown in figure.
+
+<img src="https://github.com/Kenghsin/house-image-classification/blob/master/assets/strategy2.png" width="678" height="121" /><br>
+
+If this system works, instead of checking every house with price under setting threshold, I just need to check price of all the houses system tells me. It can svae me a lot of time.
+
+### The main challenge of this problem would be:
+
+1. `Insufficient data`: it doesn't make sense to ask someone watch more than 300 images.
+2. `Image quailty`: every home owner takes pictures in different angle, different layout. 
+
+In this project, I need to go through several steps:
+1. Obtain data: the features of data will contain house images, number of bedroom, number of bathroom, house size, lot size, price, city name. Please check `1 web-scraping.jpynb`
+
+2. Data cleaning: Please check `2 data-cleaning.jpynb`
+
+3. Image preprocessing: Please check `3 image-preprocessing.jpynb`
+
+4. EDA: Please check `4 eda.jpynb`
+
+5. Model: Logistic Six classification models which is regression, decision tree, random forest, KNN, SVM, and gradient boosting are used to classify this binary class like and unlike. Please check `5 model-classification`. A CNN model is built to classify this binary class like and unlike. Please check `5 model-cnn`
+
+6. Evaluate model:
+
+7. Answer the problem: 123
+
+<span style="color:orange;">Word up</span>
+
+
